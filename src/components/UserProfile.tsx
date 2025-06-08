@@ -1,3 +1,5 @@
+import { Avatar, Button, Tooltip } from "@mantine/core";
+
 interface UserProfileProps {
   userName: string;
   onClick: () => void;
@@ -11,8 +13,20 @@ export const UserProfile: React.FC<UserProfileProps> = ({
 }) => {
   return (
     <span className="user-profile">
-      <span className="user-name">{userName}</span>
-      <button onClick={onClick}>{btnText}</button>
+      <Tooltip label={userName} color="gray">
+        <Avatar radius="xl" color="blue">
+          {userName.slice(0, 1).toUpperCase()}
+        </Avatar>
+      </Tooltip>
+      <Button
+        variant="outline"
+        color="gray"
+        size="md"
+        radius="md"
+        onClick={onClick}
+      >
+        {btnText}
+      </Button>
     </span>
   );
 };
