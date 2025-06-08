@@ -1,22 +1,30 @@
 import type React from "react";
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import { MainLayout } from "../layout";
-import { PrivateRoute } from "../hoc";
-import { AuthProvider } from "../context";
+import { MainLayout } from "../../layout";
+import { PrivateRoute } from "../../hoc";
+import { AuthProvider } from "../../context";
 
 const Login = lazy(() =>
-  import("../pages/Login").then((module) => ({ default: module.Login }))
+  import("../../pages/Login/Login").then((module) => ({
+    default: module.Login,
+  }))
 );
 const MainPage = lazy(() =>
-  import("../pages/MainPage").then((module) => ({ default: module.MainPage }))
+  import("../../pages/MainPage/MainPage").then((module) => ({
+    default: module.MainPage,
+  }))
 );
 const NotFound = lazy(() =>
-  import("../pages/NotFound").then((module) => ({ default: module.NotFound }))
+  import("../../pages/NotFound/NotFound").then((module) => ({
+    default: module.NotFound,
+  }))
 );
 
 const CategoriesRoutes = lazy(() =>
-  import("./CategoriesRoutes").then((m) => ({ default: m.CategoriesRoutes }))
+  import("../CategoriesRoutes/CategoriesRoutes").then((m) => ({
+    default: m.CategoriesRoutes,
+  }))
 );
 
 export const AppRouter: React.FC = () => {

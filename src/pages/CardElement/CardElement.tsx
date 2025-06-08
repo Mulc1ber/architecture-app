@@ -8,15 +8,19 @@ type CardElementParams = {
 };
 
 const CardCharacter = lazy(() =>
-  import("./CardCharacter").then((module) => ({
+  import("../CardCharacter/CardCharacter").then((module) => ({
     default: module.CardCharacter,
   }))
 );
 const CardLocation = lazy(() =>
-  import("./CardLocation").then((module) => ({ default: module.CardLocation }))
+  import("../CardLocation/CardLocation").then((module) => ({
+    default: module.CardLocation,
+  }))
 );
 const CardEpisode = lazy(() =>
-  import("./CardEpisode").then((module) => ({ default: module.CardEpisode }))
+  import("../CardEpisode/CardEpisode").then((module) => ({
+    default: module.CardEpisode,
+  }))
 );
 
 export const CardElement: React.FC = () => {

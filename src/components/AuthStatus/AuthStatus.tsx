@@ -1,8 +1,8 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context";
-import { UserProfile } from "./UserProfile";
+import { useAuth } from "../../context";
+import { UserProfile } from "../UserProfile/UserProfile";
 
 export const AuthStatus: React.FC = () => {
   const auth = useAuth();

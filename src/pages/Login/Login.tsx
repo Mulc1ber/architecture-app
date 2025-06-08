@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { EMAIL_REGEX, PASSWORD_REGEX } from "../constants";
-import { useAuth } from "../context";
+import { EMAIL_REGEX, PASSWORD_REGEX } from "../../constants";
+import { useAuth } from "../../context";
 
 import { Button, Input } from "@mantine/core";
 

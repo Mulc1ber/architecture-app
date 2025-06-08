@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import { CardItem } from "../components";
-import { useListCards } from "../hooks";
+import { CardItem } from "../../components";
+import { useListCards } from "../../hooks";
 
 interface Character {
   id: number;

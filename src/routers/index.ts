@@ -1,2 +1,2 @@
-export * from "./AppRouter";
-export * from "./CategoriesRoutes";
+export * from "./AppRouter/AppRouter";
+export * from "./CategoriesRoutes/CategoriesRoutes";

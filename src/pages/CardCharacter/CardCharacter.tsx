@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import { ConvertDate } from "../utils";
-import { BackButton } from "../ui";
+import { BackButton } from "../../ui";
+import { ConvertDate } from "../../utils";
 
 interface CharacterState {
   name: string;

@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import { ConvertDate } from "../utils";
-import { BackButton } from "../ui";
-import LOCATION from "../assets/location.svg";
+import { ConvertDate } from "../../utils";
+import { BackButton } from "../../ui";
+import LOCATION from "../../assets/location.svg";
 
 interface LocationState {
   name: string;
