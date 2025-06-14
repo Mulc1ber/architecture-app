@@ -1,7 +1,7 @@
 import { forwardRef, type HTMLAttributes } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import LOCATION from "../assets/location.svg";
-import TV from "../assets/tv.svg";
+import LOCATION from "../../assets/location.svg";
+import TV from "../../assets/tv.svg";
 
 interface Character {
   id: number;

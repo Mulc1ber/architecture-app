@@ -158,12 +158,20 @@
 }
 
 .error {
+  font-size: 0.8rem;
   color: red;
   max-width: 272px;
 }
 
-.loading,
 .error-boundary {
   display: flex;
   justify-content: center;
+}
+
+.loading {
+  height: calc(100% - 129px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

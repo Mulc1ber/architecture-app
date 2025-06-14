@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/Rick-Morty.png";
-import { AuthStatus } from "./AuthStatus";
+import Logo from "../../assets/Rick-Morty.png";
+import { AuthStatus } from "../AuthStatus/AuthStatus";
 
 export const Navigation: React.FC = () => {
   return (

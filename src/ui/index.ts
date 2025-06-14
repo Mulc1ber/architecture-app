@@ -1,2 +1,2 @@
-export * from "./BackButton";
-export * from "./Loading";
+export * from "./BackButton/BackButton";
+export * from "./Loading/Loading";

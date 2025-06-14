@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import { ConvertDate } from "../utils";
-import { BackButton } from "../ui";
-import TV from "../assets/tv.svg";
+import { ConvertDate } from "../../utils";
+import { BackButton } from "../../ui";
+import TV from "../../assets/tv.svg";
 
 interface EpisodeState {
   name: string;

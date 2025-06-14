@@ -1,14 +1,14 @@
 import React, { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import { CategoriesLayout } from "../layout/CategoriesLayout";
+import { CategoriesLayout } from "../../layout";
 
 const Categories = lazy(() =>
-  import("../pages/Categories").then((module) => ({
+  import("../../pages/Categories/Categories").then((module) => ({
     default: module.Categories,
   }))
 );
 const CardElement = lazy(() =>
-  import("../pages/CardElement").then((module) => ({
+  import("../../pages/CardElement/CardElement").then((module) => ({
     default: module.CardElement,
   }))
 );

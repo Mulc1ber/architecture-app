@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { EMAIL_REGEX, PASSWORD_REGEX } from "../constants";
-import { useAuth } from "../context";
+import { EMAIL_REGEX, PASSWORD_REGEX } from "../../constants";
+import { useAuth } from "../../context";
+
+import { Button, Input } from "@mantine/core";
 
 interface LoginFormData {
   email: string;
@@ -68,7 +70,8 @@ export const Login = () => {
       <form className="login-form" onSubmit={handleSubmit}>
         <label className="login-label">
           <span>Email:</span>
-          <input
+          <Input
+            error={isSubmitted && errors.email}
             type="email"
             name="email"
             placeholder="Email"
@@ -78,7 +81,8 @@ export const Login = () => {
         </label>
         <label className="login-label">
           <span>Password:</span>
-          <input
+          <Input
+            error={isSubmitted && errors.password}
             type="password"
             name="password"
             placeholder="Password"
@@ -86,7 +90,15 @@ export const Login = () => {
           />
           {isSubmitted && <div className="error">{errors.password}</div>}
         </label>
-        <button type="submit">Login</button>
+        <Button
+          variant="outline"
+          color="gray"
+          size="md"
+          radius="md"
+          type="submit"
+        >
+          Login
+        </Button>
       </form>
     </div>
   );
